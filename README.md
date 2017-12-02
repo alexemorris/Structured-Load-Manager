@@ -1,26 +1,15 @@
 # Structured Load Manager
 
-Cross platform application to convert Structured Load data into various formats. 
+Cross platform application to convert Structured Load data into various formats. Still in development, though code is here to serve as an example. 
+
 ![Structured Load Demo](https://s1.gifyu.com/images/output081ef4d151dc38e7.gif)
 
-## Install
+Utilises Electron, React, Redux and was developed over the course of a month.
 
-* **Note: requires a node version >= 7 and an npm version >= 4.**
-* **If you have installation or compilation issues with this project, please see [our debugging guide](https://github.com/chentsulin/electron-react-boilerplate/issues/400)**
+# To Do
+More tests
+Structured Load output to various Review platforms (Introspect, Reccomind, Relativity)
 
-First, clone the repo via git:
-
-```bash
-git clone --depth=1 https://github.com/chentsulin/electron-react-boilerplate.git your-project-name
-```
-
-And then install dependencies with yarn.
-
-```bash
-$ cd your-project-name
-$ yarn
-```
-**Note**: If you can't use [yarn](https://github.com/yarnpkg/yarn) for some reason, try `npm install`.
 
 ## Run
 
@@ -28,13 +17,6 @@ Start the app in the `dev` environment. This starts the renderer process in [**h
 
 ```bash
 $ npm run dev
-```
-
-Run these two commands __simultaneously__ in different console tabs:
-
-```bash
-$ npm run start-renderer-dev
-$ npm run start-main-dev
 ```
 
 ## Acknowledgments 
