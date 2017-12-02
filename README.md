@@ -7,8 +7,8 @@ Cross platform application to convert Structured Load data into various formats.
 Utilises Electron, React, Redux and many other excellent Javascript libraries.
 
 # To Do
-More tests
-Structured Load output to various Review platforms (Introspect, Reccomind, Relativity)
+- More tests
+- Structured Load output to various Review platforms (Introspect, Reccomind, Relativity)
 
 
 ## Run
