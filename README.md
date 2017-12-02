@@ -1,6 +1,6 @@
 # Structured Load Manager
 
-## Screenshot
+Cross platform application to convert Structured Load data into various formats. 
 ![Structured Load Demo](https://s1.gifyu.com/images/output081ef4d151dc38e7.gif)
 
 ## Install
@@ -37,6 +37,7 @@ $ npm run start-renderer-dev
 $ npm run start-main-dev
 ```
 
-## License
-MIT © [C. T. Lin](https://github.com/chentsulin)
+## Acknowledgments 
+Boilerplate code based heavily on the excellent work over at https://github.com/chentsulin/electron-react-boilerplate. 
+
 
