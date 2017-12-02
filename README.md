@@ -4,7 +4,7 @@ Cross platform application to convert Structured Load data into various formats.
 
 ![Structured Load Demo](https://s1.gifyu.com/images/output081ef4d151dc38e7.gif)
 
-Utilises Electron, React, Redux and was developed over the course of a month.
+Utilises Electron, React, Redux and many other excellent Javascript libraries.
 
 # To Do
 More tests
