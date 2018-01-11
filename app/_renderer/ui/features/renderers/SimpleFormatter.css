@@ -1,0 +1,53 @@
+.bubble {
+  display: inline-block;
+  padding: 2px 3px 1px 3px;
+  border: 1px solid #eee;
+  margin-right: 5px;
+  font-size: .9em;
+  border-radius: 3px;
+}
+
+
+.fixedwidth {
+  font-family: 'Consolas', monospace;
+  /*color: #1e5a84*/
+}
+
+.titlecase {
+  text-transform: capitalize;
+}
+
+.grey {
+  color: #ddd;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 300;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+
+
+.date {
+  font-family: 'Consolas', monospace;
+  font-size: .95em;
+  color: #333
+}
+
+.value {
+}
+
+
+.true, .false {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+}
+
+.true {
+  background-color: #15B371;
+}
+
+.false {
+  background-color: #DB3737;
+}

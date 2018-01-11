@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>eBundle Author Splash</title>
+    <script>
+      (function() {
+        if (!process.env.HOT) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = '../../dist/splash.css';
+          // HACK: Writing the script path should be done with webpack
+          document.getElementsByTagName('head')[0].appendChild(link);
+        }
+      }());
+    </script>
+  </head>
+  <body>
+    <h2><span>Structured</span> Data Load Manager</h2>
+    <ul>
+      <!-- <li id="open-ebundle">
+        <i class="fa fa-external-link" aria-hidden="true"></i>
+        Open eBundle
+      </li> -->
+      <li id="create-ebundle">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        Create eBundle
+      </li>
+    </ul>
+    <script>
+      {
+        const scripts = [];
+
+        // Dynamically insert the DLL script in development env in the
+        // renderer process
+        if (process.env.NODE_ENV === 'development') {
+          scripts.push('../../../dll/renderer.dev.dll.js');
+        }
+
+        // Dynamically insert the bundled app script in the renderer process
+        const port = process.env.PORT || 1212;
+        scripts.push(
+          (process.env.HOT)
+            ? 'http://localhost:' + port + '/dist/splash.dev.js'
+            : '../../dist/splash.prod.js'
+        );
+
+        document.write(
+          scripts
+            .map(script => '<script defer src="' + script + '"><\/script>')
+            .join('')
+        );
+      }
+    </script>
+  </body>
+</html>

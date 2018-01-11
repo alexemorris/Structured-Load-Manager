@@ -1,0 +1,112 @@
+.node {
+  margin-bottom: 15px;
+
+
+  // :global .pt-popover-target {
+  //   margin-top: 15px;
+  //   margin-bottom: 5px;
+  //   color: #999;
+  // }
+  //
+  // :global .pt-control {
+  //   margin-bottom: 0;
+  //   margin-right: 20px;
+  // }
+  //
+  :global .pt-input {
+    width: 100%;
+  }
+  //
+  // :global .pt-select {
+  //   display: block !important;
+  //   select {
+  //     width: 100%;
+  //   }
+  // }
+
+}
+
+.nodeInfo {
+  width: 100%;
+  background: #eee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.nodeForm {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(black, 0.05);
+}
+
+.nodeFormContainer {
+  overflow: hidden;
+}
+
+.nodeSettings {
+  margin-top: 8px;
+  border-top: 1px solid rgba(black, 0.05);
+  padding-top: 8px;
+}
+
+.nodeIcons {
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  float: right;
+}
+
+.nodeIcons :global .fa {
+  margin: 0 5px;
+}
+
+
+.titleEdit {
+  width: 100%;
+  opacity: 0.75;
+  font-size: 1.2em;
+  margin-top: 4px;
+}
+
+
+.columnMapping {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.infoContainer {
+  width: 300px;
+  padding: 10px;
+  color: #999;
+}
+
+.node :global .pt-label {
+  margin-bottom: 10px;
+}
+
+.node :global .fa {
+  transition: all 0.15s linear;
+  opacity: 0.5;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+
+.activeRoot .nodeInfo,  .activeBranch .nodeInfo {
+  background: rgba(#3DCC91, 0.15);
+
+  .titleEdit {
+    opacity: 1;
+  }
+  :global .fa {
+    // color: white;
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

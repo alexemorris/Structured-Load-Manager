@@ -1,0 +1,59 @@
+.checkFiles {
+  background: whitesmoke;
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+.textColumn, .nativeColumn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textColumn {
+  border-right: 1px solid #eee;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25em 0;
+}
+
+.header h1 {
+  font-weight: 200;
+  font-size: 1.2em;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+
+.checkFiles :global .pt-minimal {
+  color: #999;
+}
+
+.selectDirectory {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+
+.selectDirectory h2 {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.selectDirectory a {
+  min-width: 100px;
+  border: 1px solid #eee;
+  margin-left: 20px;
+}

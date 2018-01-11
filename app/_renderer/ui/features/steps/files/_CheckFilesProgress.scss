@@ -1,0 +1,52 @@
+.checkFilesProgress {
+  padding: 1em;
+  border-top: 1px solid #eee;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.mapFields {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.fieldTitle {
+  flex: 1;
+  color: #666;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.mapFields :global .pt-select {
+  color: #333;
+}
+
+
+.chooseDefault {
+  color: #ccc;
+}
+
+.fieldOptions {
+  flex: 1;
+  margin-left: 10px;
+}
+
+
+.progress {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.verified {
+}
+
+
+.missing {
+  color: #DB3737;
+}

@@ -1,0 +1,45 @@
+.configurecolumns {
+  display: flex;
+  height: 100%;
+  background: whitesmoke;
+}
+
+.columnTree {
+  flex: 1;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+}
+
+.columnPreviewWrapper {
+  border-left: 1px solid #eee;
+  width: 400px;
+  height: 100%;
+}
+
+.columnTreeContainer {
+  flex: 1;
+  height: 100%;
+  border-right: 1px solid #eee;
+  position: relative;
+  overflow-y: scroll;
+}
+
+
+.bundlePreview {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.autoMap {
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+  h1 {
+    font-size: 1.5em;
+    color: #ddd;
+    margin-bottom: .5em;
+  }
+}

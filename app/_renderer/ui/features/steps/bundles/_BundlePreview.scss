@@ -1,0 +1,54 @@
+.configureColumnsPreview {
+  width: 400px;
+  height: 100%;
+}
+
+.configureColumnsPreviewCon {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+  justify-content: center;
+  background: white
+}
+
+.header h1 {
+  font-weight: 200;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+
+.previewContainer {
+  position: relative;
+  overflow-y: scroll;
+  flex: 1;
+  height: 100%;
+}
+
+.previewList {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: white
+}
+
+
+.entry {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  font-size: .9em;
+  min-height: 36px;
+  font-family: 'Consolas', monospace;
+  color: #333;
+}

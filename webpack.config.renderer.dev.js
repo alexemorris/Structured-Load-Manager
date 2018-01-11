@@ -39,15 +39,20 @@ export default merge.smart(baseConfig, {
 
   target: 'electron-renderer',
 
-  entry: [
-    'react-hot-loader/patch',
-    `webpack-dev-server/client?http://localhost:${port}/`,
-    'webpack/hot/only-dev-server',
-    path.join(__dirname, 'app/index.js'),
-  ],
+  entry: {
+    ui: path.join(__dirname, 'app/_renderer/ui/ui.js'),
+    processing: path.join(__dirname, 'app/_renderer/processing/processing.js'),
+    splash: path.join(__dirname, 'app/_renderer/splash/splash.js'),
+    dev: [
+      'react-hot-loader/patch',
+      `webpack-dev-server/client?http://localhost:${port}/`,
+      'webpack/hot/only-dev-server',
+    ]
+  },
 
   output: {
-    publicPath: `http://localhost:${port}/dist/`
+    publicPath: `http://localhost:${port}/dist/`,
+    filename: '[name].dev.js'
   },
 
   module: {
@@ -139,6 +144,12 @@ export default merge.smart(baseConfig, {
             loader: 'sass-loader'
           }
         ]
+      },
+      {
+        test: /\.md$/,
+        use: {
+          loader: 'raw-loader'
+        }
       },
       // WOFF Font
       {

@@ -1,0 +1,50 @@
+$color: #005295;
+
+.icon {
+}
+
+.iconHoverable {
+	color: rgba($color, 0.25);
+	-webkit-transition: color 0.25s linear;
+	cursor: pointer;
+	&:hover {
+		color: rgba($color, 0.5);
+	}
+}
+
+.iconActive {
+	color: rgba($color, 0.8);
+}
+
+.iconContainer {
+	position: relative;
+  padding: 0 .5em;
+}
+
+.iconBadge {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	text-align: center;
+	background: rgba(#d62c2c, 0.9);
+	color: white;
+	flex-grow: 1;
+	min-width: 10px;
+	height: 16px;
+	display: block;
+	font-size: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	padding: 0;
+}
+
+.iconBadge p {
+	margin: 0 5px 0 4.5px;
+	font-family: "MonoFont";
+	width: 100%;
+	text-align: center;;
+	font-size: 10px;
+	transform: translateX(0.5px) translateY(-0.5px);
+}

@@ -1,0 +1,96 @@
+$active : #3DCC91;
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.viewport {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.progress {
+  background: #394B59;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  flex: 0 0 60px;
+}
+
+.progress i {
+  color: $active;
+  cursor: pointer;
+}
+
+.progress i.disabled {
+  opacity: 0.25;
+  cursor:auto;
+}
+
+
+.progressBar {
+  height: 3px;
+  width: 100%;
+  margin: 0 1em;
+  display: flex;
+  background: #5C7080;
+  flex: 1;
+  position: relative;
+}
+
+
+.progressEntries {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressSection {
+  width: 100%;
+}
+
+.progressEntry {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3px;
+}
+
+.progressSection:last-child {
+  width: 0% !important;
+}
+
+.progressCircle {
+  width: 9px;
+  height: 9px;
+  border-radius: 4.5px;
+  background: #5C7080;
+  z-index: 2;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+
+
+.progressRect {
+  width: 0%;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  background: $active;
+  height: 100%;
+  transition-timing-function: ease;
+  transition: width 0.4s;
+}
+
+.currentEntry .progressCircle {
+  background: #48AFF0;
+  transform: scale(1.2);
+}
+
+.activeEntry .progressCircle {
+  background: $active;
+}

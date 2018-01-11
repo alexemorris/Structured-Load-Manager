@@ -1,0 +1,75 @@
+.configureColumnsPreview {
+  width: 400px;
+  height: 100%;
+}
+
+
+.columnPreview {
+  width: 100%;
+  flex: 1;
+}
+
+.loading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  :global .fa-spin {
+    opacity: 0.75;
+    font-size: 1.5em;
+  }
+}
+
+
+.configureColumnsPreviewCon {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+  justify-content: center;
+  background: white
+}
+
+.header h1 {
+  font-weight: 200;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+
+.previewContainer {
+  position: relative;
+  overflow-y: scroll;
+  flex: 1;
+  height: 100%;
+}
+
+.previewList {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: white;
+  height: 100%;
+
+}
+
+
+.entry {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  font-size: .9em;
+  // font-family: 'Consolas', monospace;
+  color: #333;
+  background: white;
+}

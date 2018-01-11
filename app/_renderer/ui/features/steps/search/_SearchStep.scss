@@ -1,0 +1,175 @@
+
+.searchContainer {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em 0;
+
+}
+
+.setIndexedHeader {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: .5em;
+  width: 100%;
+  text-align: center;
+}
+
+.mainContent :global .fa-cog, .mainContent :global .fa-search  {
+ color: #eee;
+ font-size: 10em;
+ margin-bottom: .25em;
+}
+
+
+.indexedColumns {
+  column-count: 2;
+  column-gap: 2em;
+  column-rule: 0.5px solid #eee;
+  padding: 0;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.fullTextSwitch {
+  margin-bottom: 1em;
+}
+
+.searchConfig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructions {
+  max-width: 500px;
+  width: 50%;
+
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  p {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+.result {
+  background: white;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+
+  .resultHeader {
+    margin-bottom: .5em;
+    padding-bottom: .25em;
+    border-bottom: 1px solid whitesmoke;
+  }
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: .25em;
+    font-weight: bold;
+  }
+
+
+    h4 {
+      color: #0F9960;
+      font-size: .9em;
+      margin: 0;
+      margin-bottom: .25em;
+      opacity: .65;
+
+    }
+
+  p {
+    color: #999;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.results {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.resultsScroller {
+  position: absolute;
+  width: 100%;
+  padding: 2em;
+}
+
+.search {
+  font-size: 1.1em;
+  display: flex;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  padding: 1.5em;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  :global .pt-label {
+    flex: 1;
+    margin: 0;
+  }
+
+  :global .pt-input {
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0 1em 0 0;
+    font-size: 1.75em;
+    // font-weight: bold;
+  }
+
+  :global .fa-refresh {
+    font-size: 1.8em;
+    margin-left: .75em;
+    color: #137CBD;
+    &:hover {
+      color: #0E5A8A;
+      transform: scale(1.1);
+    }
+    transition: all 0.1s linear;
+    cursor: pointer;
+  }
+
+}
+
+.loading {
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+
+  :global .fa {
+    font-size: 4em;
+    opacity: 0.05;
+  }
+}

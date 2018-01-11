@@ -1,0 +1,72 @@
+@import "~font-awesome/css/font-awesome.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #293742;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, 'Proxima Nova', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 300;
+  color: #E1E8ED;
+  padding: 1em 0 1em 0;
+  width: 100%;
+  text-align: center;
+  -webkit-app-region: drag;
+
+}
+
+h2 span {
+  font-weight: bold;
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  color: #E1E8ED;
+  border-right: 0.5px solid rgba(0,0,0,0.25);
+  opacity: 0.65;
+  transition: opacity 0.1s linear;
+  cursor: pointer;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li:hover {
+  opacity: 1;
+}
+
+.fa {
+  font-size: 4em;
+  color: #3DCC91;
+  margin-bottom: .25em;
+}

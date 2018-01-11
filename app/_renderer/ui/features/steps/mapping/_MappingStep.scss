@@ -1,0 +1,64 @@
+.mapping {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2em;
+}
+
+.mappingContainer {
+  flex: 1;
+  position: relative;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+:global .fa-info-circle {
+  cursor: pointer;
+}
+
+.required {
+  margin-left: .2em;
+  transform: translateY(5px);
+  position: absolute;
+  top: -10px;
+  font-size: 1.5em;
+  color: red;
+}
+
+.mappingDescription {
+  margin-bottom: 0;
+  margin-right: 2em;
+  flex: 1;
+  position: relative;
+  h1 {
+    font-size: 1.1em;
+  }
+}
+
+.mappingItem {
+  width: 100%;
+  padding: 2em 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+
+
+  :global .pt-label {
+    flex: 1;
+
+    select {
+      width: 100%;
+    }
+  }
+}
+
+
+.infoContainer {
+  width: 300px;
+  padding: 10px;
+  color: #999;
+}

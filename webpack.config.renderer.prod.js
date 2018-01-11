@@ -7,7 +7,6 @@ import webpack from 'webpack';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import merge from 'webpack-merge';
-import BabiliPlugin from 'babili-webpack-plugin';
 import baseConfig from './webpack.config.base';
 import CheckNodeEnv from './internals/scripts/CheckNodeEnv';
 
@@ -18,12 +17,16 @@ export default merge.smart(baseConfig, {
 
   target: 'electron-renderer',
 
-  entry: './app/index',
+  entry: {
+    ui: './app/_renderer/ui/ui.js',
+    splash: './app/_renderer/splash/splash.js',
+    processing: './app/_renderer/processing/processing.js'
+  },
 
   output: {
     path: path.join(__dirname, 'app/dist'),
     publicPath: '../dist/',
-    filename: 'renderer.prod.js'
+    filename: '[name].prod.js'
   },
 
   module: {
@@ -81,6 +84,12 @@ export default merge.smart(baseConfig, {
             loader: 'sass-loader'
           }]
         }),
+      },
+      {
+        test: /\.md$/,
+        use: {
+          loader: 'raw-loader'
+        }
       },
       // WOFF Font
       {
@@ -156,9 +165,9 @@ export default merge.smart(baseConfig, {
     /**
      * Babli is an ES6+ aware minifier based on the Babel toolchain (beta)
      */
-    new BabiliPlugin(),
+    // new BabiliPlugin(),
 
-    new ExtractTextPlugin('style.css'),
+    new ExtractTextPlugin('[name].css'),
 
     new BundleAnalyzerPlugin({
       analyzerMode: process.env.OPEN_ANALYZER === 'true' ? 'server' : 'disabled',

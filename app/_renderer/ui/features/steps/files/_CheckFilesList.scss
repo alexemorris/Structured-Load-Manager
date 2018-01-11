@@ -1,0 +1,74 @@
+.checkFilesList {
+  flex: 1;
+  color: #333;
+  font-size: 0.9em;
+  overflow-y: scroll;
+  position: relative;
+  background: white;
+  margin: 0;
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+
+    > div {
+      color: #999;
+    }
+  }
+
+
+  :global .fa-close {
+    color: #DB3737;
+    float: right;
+  }
+
+
+    :global .fa-check {
+      color: #15B371;
+    }
+
+}
+
+
+.checkFilesUl {
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  color: #333;
+  padding-left: 0;
+  margin: 0;
+}
+
+.title {
+  color: #999;
+}
+
+
+.fileEntry {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fileEntry > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.uuid {
+  font-family: monospace;
+  opacity: 0.5;
+  margin-right: 20px;
+  width: 100px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.file {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

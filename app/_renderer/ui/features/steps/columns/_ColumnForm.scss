@@ -1,0 +1,32 @@
+.columnForm {
+  width: 100%;
+  :global .CodeMirror {
+    border-radius: 3px;
+  }
+
+  :global .pt-input {
+    margin-bottom: 10px;
+  }
+
+  :global .pt-switch {
+    margin-bottom: 15px
+  }
+  //
+  // :global .pt-editable-text {
+  //   margin-bottom: 10px;
+  // }
+
+
+
+
+  :global .CodeMirror-scroll {
+    width:100%;
+  }
+
+}
+
+.infoContainer {
+  width: 300px;
+  padding: 10px;
+  color: #999;
+}
